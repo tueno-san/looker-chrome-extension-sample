@@ -18,12 +18,12 @@
 																	var search_word = encodeURIComponent(e);
 																	
 																	//	const t=await o.a.get("https://covid19.mathdro.id/api/countries/"+e);
-																	const t=await o.a.get(base_url+"queries/models/thelook-model/views/order_items/run/json?fields=order_items.total_revenue&access_token=nvBGcCj4CRtBDrVCCvVcs2DYs8qthPqxXTcC5t8H&f[products.brand]="+search_word);
+																	const t=await o.a.get(base_url+"queries/models/thelook-model/views/order_items/run/json?fields=order_items.total_revenue&access_token=cHBNy5MXrB38bNhKFK7S6YjcgZVxjCvcXNX2MmwJ&f[products.brand]="+search_word);
 												//alert(JSON.stringify(t.data[0]['order_items.total_revenue']));
 												s.style.display="none",
 												a.textContent=JSON.stringify(t.data[0]['order_items.total_revenue']),
-												u.textContent=0,
-												c.textContent=0,f.style.display="block"
+												u.textContent="",
+												c.textContent="",f.style.display="block"
 												//		alert(a.textContent);
 													}
 														catch(e){s.style.display="none",f.style.display="none",i.textContent="We have no data for the country you have requested."}
